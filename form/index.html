@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+  
+</head>
+<body>
+   <header>
+    <nav>
+        <!-- Internal navigation -->
+        <a href="../">About</a>
+        <a href="./">Form</a>
+    </nav>
+   </header>
+   <section>
+    <form>
+        <h1>Application Form</h1>
+
+        <h4> Fill in your details</h4>
+
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required >
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="08154387000">
+
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+        <label>Education Level</label>
+        <select id="education" name="Education" required>
+            <option>BSc</option>
+            <option>MSc</option>
+            <option>Diploma</option>
+            <option>Doctorate (PhD)</option>
+            <option>High School/Secondary School</option>
+            <option>Under Graduate</option>
+            <option>Junior/Middle School</option>
+            <option>Post Graduate</option>
+            
+        </select>
+
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+
+        <label>Country</label>
+        <select type= "Country" name="Country" required>
+            <option>Nigeria</option>
+            <option >Canada</option>
+            <option >United Kingdom</option>
+            <option >Australia</option>
+            <option>India</option>
+        </select>
+
+
+        <label for="address">State/City of Residence</label>
+        <input type="address" placeholder="Enter your state of residence" required>
+
+        <label>Employment Status</label>
+        <!-- <input type="employment" placeholder="Select employment status" required> -->
+        <select type= "employment" required>
+            <option>employed</option>
+            <option >unemployed</option>
+            <option >self-employed</option>
+        </select>
+
+
+        
+        <label>Choose School</label>
+        <select type= "school" required>
+            <option>School of Engineering</option>
+            <option >School of Data</option>
+            <option >School of Product</option>
+            <option >School of Creative Economy</option>
+            <option >School of Business</option>
+        </select>
+
+        <label>Choose Course of Study</label>
+        <select type = "course" required>
+            <option>Frontend Engineering</option>
+            <option>Backend Engineering</option>
+            <option>Cloud Engineering</option>
+        </select>
+
+
+        <label>How did you hear about us?</label>
+        <select required>
+            <option>Twitter</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+        </select>
+
+
+        <label>Scholarship/Discount Code (optional)</label>
+        <input placeholder="Scholarship or Discount">
+
+
+        
+        <button type="submit">Proceed</button>
+
+
+
+    </form>
+
+        
+   </section>
+
+</body>
+</html>
